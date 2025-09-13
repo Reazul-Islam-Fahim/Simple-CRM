@@ -19,28 +19,28 @@ This project builds a Customer Relationship Management (CRM) Data Warehouse to e
 - **LaTeX Environment**: Overleaf (online) or local pdflatex (e.g., MiKTeX) for report compilation.
 
 ## Project Structure
-Assisgnment CRM/
-├── src/ # Java source files for ETL
-│ ├── CSVParser.java # Parses CSV files (sales_teams.csv, sales_pipeline.csv)
-│ ├── DataTransformer.java # Applies transformations (e.g., sector title case)
-│ ├── ETL_Main.java # Orchestrates ETL process
-│ ├── MySQLLoader.java # Loads data into MySQL via JDBC
-│ └── XMLParser.java # Parses XML files (products.xml, accounts.xml)
-├── libs/ # External libraries
-│ └── mysql-connector-j-9.4.0.jar # MySQL JDBC driver
-├── data/ # Input dataset files
-│ ├── accounts.xml # ~90 account records
-│ ├── products.xml # 7 product records
-│ ├── sales_teams.csv # 36 sales team records
-│ └── sales_pipeline.csv # ~1000+ sales opportunity records
-├── warehouse.sql # MySQL schema and data export
-└── CRM_Data_Warehouse_Report.tex # LaTeX report with team contributions, screenshots
+* Assisgnment CRM/
+* ├── src/ # Java source files for ETL
+* │ ├── CSVParser.java # Parses CSV files (sales_teams.csv, sales_pipeline.csv)
+* │ ├── DataTransformer.java # Applies transformations (e.g., sector title case)
+* │ ├── ETL_Main.java # Orchestrates ETL process
+* │ ├── MySQLLoader.java # Loads data into MySQL via JDBC
+* │ └── XMLParser.java # Parses XML files (products.xml, accounts.xml)
+* ├── libs/ # External libraries
+* │ └── mysql-connector-j-9.4.0.jar # MySQL JDBC driver
+* ├── data/ # Input dataset files
+* │ ├── accounts.xml # ~90 account records
+* │ ├── products.xml # 7 product records
+* │ ├── sales_teams.csv # 36 sales team records
+* │ └── sales_pipeline.csv # ~1000+ sales opportunity records
+* ├── warehouse.sql # MySQL schema and data export
+* └── CRM_Data_Warehouse_Report.tex # LaTeX report with team contributions, screenshots
 
-xampp/ # XAMPP installation (default: D:\xampp)
-└── htdocs/
-└── crm/ # Web interface files
-├── index.html # Homepage with report links
-└── queryEngine.php # PHP script for queries and reports
+* xampp/ # XAMPP installation (default: D:\xampp)
+* └── htdocs/
+* └── crm/ # Web interface files
+* ├── index.html # Homepage with report links
+* └── queryEngine.php # PHP script for queries and reports
 
 
 ## Setup Instructions
