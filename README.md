@@ -76,3 +76,34 @@ This project builds a Customer Relationship Management (CRM) Data Warehouse to e
 2. Navigate to `src/`:
    ```bash
    cd C:\Users\[YourUsername]\Downloads\Assisgnment CRM\src
+   ```
+3. Compile Java files:
+   ```bash
+   javac -cp ".;..\libs\mysql-connector-j-9.4.0.jar" *.java
+   ```
+* Expected: Silent success (creates .class files)
+4. Run ETL:
+   ```bash
+   java -cp ".;..\libs\mysql-connector-j-9.4.0.jar" ETL_Main
+   ```
+Expected output:
+   ```bash
+   Parsed 7 records from ..\data\products.xml for table products
+   Parsed 90 records from ..\data\accounts.xml for table accounts
+   Parsed 36 rows from ..\data\sales_teams.csv
+   Parsed [1000+] rows from ..\data\sales_pipeline.csv
+   ETL process completed successfully.
+   ```
+
+* If errors: Check data/ file paths, MySQL connection (root, no password), or share output
+
+
+### 5. Test Web Interface
+1. Ensure Apache and MySQL are running in XAMPP
+2. Open browser: `http://localhost/crm/index.html`
+3. Expected: Homepage with "CRM Reports and Analyses" and four links:
+   - Products Report: 7 rows (e.g., "GTX Basic", $550)
+   - Sales Opportunities Report: ~500 rows (Won/Lost deals)
+   - Establishment Year Revenue Analysis: Revenue by year (e.g., 1980: $7708.38M)
+   - Sales Opportunity Analysis: Total value by produ
+4.If "No data": Re-run ETL or verify tables in phpMyAdmin (`SELECT COUNT(*) FROM products;`)
