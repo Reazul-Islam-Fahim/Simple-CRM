@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <product>GTX Basic</product>
+    <series>GTX</series>
+    <sales_price>550</sales_price>
+  </row>
+  <row>
+    <product>GTX Pro</product>
+    <series>GTX</series>
+    <sales_price>4821</sales_price>
+  </row>
+  <row>
+    <product>MG Special</product>
+    <series>MG</series>
+    <sales_price>55</sales_price>
+  </row>
+  <row>
+    <product>MG Advanced</product>
+    <series>MG</series>
+    <sales_price>3393</sales_price>
+  </row>
+  <row>
+    <product>GTX Plus Pro</product>
+    <series>GTX</series>
+    <sales_price>5482</sales_price>
+  </row>
+  <row>
+    <product>GTX Plus Basic</product>
+    <series>GTX</series>
+    <sales_price>1096</sales_price>
+  </row>
+  <row>
+    <product>GTK 500</product>
+    <series>GTK</series>
+    <sales_price>26768</sales_price>
+  </row>
+</root>
