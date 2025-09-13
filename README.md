@@ -76,5 +76,3 @@ xampp/ # XAMPP installation (default: D:\xampp)
 2. Navigate to `src/`:
    ```bash
    cd C:\Users\[YourUsername]\Downloads\Assisgnment CRM\src
-
-   
